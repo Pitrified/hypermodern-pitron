@@ -1,29 +1,25 @@
-# F are errors reported by pyflakes, a tool which parses source files and finds
-# invalid Python code.
-
-# W and E are warnings and errors reported by pycodestyle, which checks your
-# Python code against some of the style conventions in PEP 8.
-
-# C are violations reported by mccabe, which checks the code complexity of your
-# Python package against a configured limit.
-
-# BLK are flake8-black warnings
-
-# I are flake8-imports-order
-
-# B9 is required for Bugbear’s more opinionated warnings
-
-# S like security for Bandit
-
 # ANN like annotations
+# B - B9 is required for Bugbear’s more opinionated warnings
+# BLK are flake8-black warnings
+# C are violations reported by mccabe, which checks the code complexity of your
+#    Python package against a configured limit.
+# D for docstring
+# DAR like darglint
+# F are errors reported by pyflakes, a tool which parses source files and finds
+#    invalid Python code.
+# I are flake8-imports-order
+# S like security for Bandit
+# W and E are warnings and errors reported by pycodestyle, which checks your
+#    Python code against some of the style conventions in PEP 8.
 
 [flake8]
-select = ANN,B,B9,BLK,C,E,F,I,S,W
+select = ANN,B,B9,BLK,C,D,DAR,E,F,I,S,W
 ignore = E203,E501,W503
 max-line-length = 80
 application-import-names = hypermodern_pitron,tests
 import-order-style = google
+docstring-convention = google
 per-file-ignores =
-    # tests/*:S101,ANN
+    # tests/*:ANN
     tests/*:S101
     # noxfile.py:ANN

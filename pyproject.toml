@@ -31,6 +31,10 @@ safety = "^1.10.3"
 mypy = "^0.812"
 pytype = {version = "^2021.2.23", python = "3.8"}
 flake8-annotations = "^2.5.0"
+darglint = "^1.7.0"
+xdoctest = "^0.15.4"
+Sphinx = "^3.5.1"
+sphinx-autodoc-typehints = "^1.11.1"
 
 [tool.poetry.scripts]
 hypermodern-pitron = "hypermodern_pitron.console:main"
