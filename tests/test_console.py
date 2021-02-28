@@ -1,6 +1,6 @@
+import click.testing
 import pytest
 import requests
-import click.testing
 
 from hypermodern_pitron import console
 
