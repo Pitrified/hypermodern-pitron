@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "hypermodern-pitron"
+version = "0.1.0"
+description = "The hypermodern Pitron tutorial"
+authors = ["Pitrified"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/Pitrified/hypermodern-pitron"
+repository = "https://github.com/Pitrified/hypermodern-pitron"
+keywords = ["hypermodern"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+hypermodern-pitron = "hypermodern_pitron.console:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
