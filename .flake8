@@ -15,10 +15,15 @@
 
 # S like security for Bandit
 
+# ANN like annotations
+
 [flake8]
-select = B,B9,BLK,C,E,F,I,S,W
+select = ANN,B,B9,BLK,C,E,F,I,S,W
 ignore = E203,E501,W503
 max-line-length = 80
 application-import-names = hypermodern_pitron,tests
 import-order-style = google
-per-file-ignores = tests/*:S101
+per-file-ignores =
+    # tests/*:S101,ANN
+    tests/*:S101
+    # noxfile.py:ANN
