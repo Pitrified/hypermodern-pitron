@@ -866,7 +866,7 @@ tests = ["pytest", "pytest-cov", "codecov", "scikit-build", "cmake", "ninja", "p
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "d2d30c448265e069d9ee9310c230e610947e679648ede7afff73c4fe6f9c4d2d"
+content-hash = "69c0b13b301a6498e44ecb36e8a25791343fa9d87178fd842da5fad2af9881f7"
 
 [metadata.files]
 alabaster = [
